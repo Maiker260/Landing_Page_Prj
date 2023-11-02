@@ -1,0 +1,93 @@
+:root {
+    --bkg-lin: #1F2937;
+    --hr-main: #F9FAF8;
+    --sec-col: #E5E7EB;
+    --btn-col: #3882F6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:
+}
+
+.first-container {
+    padding-left: 20em;
+    background-color: var(--bkg-lin) ;
+    padding: 1.2em 14em;
+}
+
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: var(--hr-main);
+    width: 50%;
+}
+
+.nav-link {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.nav-link li {
+    list-style-type: none;
+    padding-left: 1.5em;
+}
+
+.nav-link li, .sec-text, .main-logo >p {
+font-size: 18px;
+color: var(--sec-col);
+}
+
+.main-content {
+    background-color: var(--bkg-lin);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.main-subcontainer {
+    padding-right: 3em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 250px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: bolder;
+    color: var(--hr-main);
+    line-height: 1.2;
+}
+
+.sec-text{
+    line-height: 1.3;
+}
+
+.btn {
+    color: var(--sec-col);
+    background-color: var(--btn-col);
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.main-logo {
+    width: 50%;
+    height: 250px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

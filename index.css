@@ -14,7 +14,7 @@
 
 .container  {
     padding-left: 20em;
-    padding: 1.2em 14em;
+    padding: 1.2em 14em 4em;
 }
 
 .first, .main-content {
@@ -23,6 +23,10 @@
 
 .second {
     background-color: white;
+}
+
+.third {
+    background-color: var(--sec-col);
 }
 
 .top-bar {
@@ -103,9 +107,6 @@ color: var(--sec-col);
     align-items: center;
 }
 
-.info-contain {
-}
-
 .info-header {
     font-size: 30px;
     font-weight: bolder;
@@ -137,4 +138,23 @@ color: var(--sec-col);
     text-align: center;
     font-weight: bold;
     color: #6f7580;
+}
+
+.quote-contain {
+    padding: 5em 6em 2em;
+}
+
+.quote, .quote-auth {
+    color: var(--bkg-lin);
+}
+
+.quote {
+    font-size: 36px;
+    font-weight:lighter;
+    font-style: italic;
+}
+
+.quote-auth {
+    text-align: end;
+    padding-right: 10px;
 }

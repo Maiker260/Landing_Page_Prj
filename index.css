@@ -20,7 +20,7 @@ main .first > .container {
     padding-top: 2em;
 }
 
-.first, .main-content {
+.first, .main-content, footer {
     background-color: var(--bkg-lin);
 }
 
@@ -115,6 +115,7 @@ color: var(--sec-col);
     font-weight: bolder;
     color: var(--bkg-lin);
     text-align: center;
+    margin-bottom: 0.5em;
 }
 
 .ilust-contain {
@@ -192,4 +193,12 @@ color: var(--sec-col);
     border-radius: 8px;
     font-size: 18px;
     font-weight: bold;
+}
+
+footer {
+    font-size: 18px;
+    color: white;
+    height: 5em;
+    padding: 2em;
+    text-align: center;
 }

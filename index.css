@@ -1,9 +1,14 @@
+/* Global Variables */
+
 :root {
     --bkg-lin: #1F2937;
     --hr-main: #F9FAF8;
     --sec-col: #c6c9ce;
     --btn-col: #3882F6;
 }
+
+
+/* Global Changes */
 
 * {
     margin: 0;
@@ -12,6 +17,26 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+/* General Styles */
+.flex {
+    display: flex;
+}
+
+.FS-20 {
+    font-size: 20px;
+}
+
+.FS-18 {
+    font-size: 18px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/* Layout Style */
 .container  {
     padding: 5em 14em;
 }
@@ -34,7 +59,6 @@ main .first > .container {
 
 .top-bar {
     width: 100%;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--bkg-lin);
@@ -47,8 +71,12 @@ main .first > .container {
     width: 50%;
 }
 
+a {
+    text-decoration: none;
+    color: var(--sec-col);
+}
+
 .nav-link {
-    display: flex;
     width: 50%;
     justify-content: flex-end;
 }
@@ -59,8 +87,7 @@ main .first > .container {
 }
 
 .nav-link li, .sec-text, .main-logo > p, .pic-descrip {
-font-size: 18px;
-color: var(--sec-col);
+    color: var(--sec-col);
 }
 
 .main-content {
@@ -71,7 +98,6 @@ color: var(--sec-col);
 
 .main-subcontain {
     padding-right: 3em;
-    display: flex;
     flex-direction: column;
     width: 50%;
     height: 250px;
@@ -79,52 +105,51 @@ color: var(--sec-col);
 
 .main-title {
     font-size: 48px;
-    font-weight: bolder;
     color: var(--hr-main);
     line-height: 1.2;
 }
 
 .sec-text{
     margin-top: 0.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
-.btn-mn {
-    color: white;
+.btn-mn, .btn-ft {
     background-color: var(--btn-col);
-    border: 1px solid var(--btn-col);
     width: 130px;
     height: 50px;
     border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
+}
+
+.btn-mn, .btn-ft, .cta-contain, footer {
+    color: white;
+}
+
+.btn-mn {
+    border: 1px solid var(--btn-col);
     padding-bottom: 2px;
 }
 
 .main-logo {
-    width: 50%;
+    width: 40%;
     height: 250px;
     background-color: gray;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .info-header {
     font-size: 30px;
-    font-weight: bolder;
     color: var(--bkg-lin);
     text-align: center;
     margin-bottom: 0.5em;
 }
 
 .ilust-contain {
-    display: flex;
     justify-content: center;
 }
 
 .ilust-item {
-    display: flex;
     flex-direction: column;
     width: 170px;
     margin: 1.5em;
@@ -140,7 +165,6 @@ color: var(--sec-col);
 
 .pic-descrip {
     text-align: center;
-    font-weight: bold;
     color: #6f7580;
 }
 
@@ -162,43 +186,39 @@ color: var(--sec-col);
 .quote-auth {
     text-align: end;
     padding-right: 6px;
-    font-weight: bold;
 }
 
 .cta-contain {
     background-color: var(--btn-col);
-    color: white;
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
     padding: 3em 6em;
-    display: flex;
     justify-content: space-between;
 }
 
-.cta-title {
-    font-size: 20px;
-}
-
-.cta-descrip {
-    font-size: 18px;
-}
-
 .btn-ft {
-    color: white;
-    background-color: var(--btn-col);
     border: 2px solid white;
-    width: 130px;
-    height: 50px;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
 }
 
 footer {
-    font-size: 18px;
-    color: white;
     height: 5em;
     padding: 2em;
     text-align: center;
+}
+
+
+/* REMOVE WHEN TASKS ARE DONE*/
+.REMOVE {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    bottom: 2em;
+    right: 0;
+    background-color: bisque;
+    padding: 10px;
+}
+
+.REMOVE > ul{
+    padding: 1em;
 }
